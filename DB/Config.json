@@ -1,0 +1,12 @@
+{
+    "Token": "test",
+    "Bot Owner": [],
+    "Server Owner": [],
+    "Commands": {
+        "Avatar": 0,
+        "Lurk": 0,
+        "Messages": 0,
+        "Ping": 0,
+        "Shutdown": 0
+    }
+}
