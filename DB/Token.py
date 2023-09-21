@@ -16,10 +16,10 @@ def New_token():
                 case text if text.lower().replace(" ", "") in ["c", "cancel", "abbrechen", "stop"]:
                     print("\nIch hab es abgebrochen")
                 case _:
-                    with open("DB/Config.json", "r+") as f:
+                    with open("DB/Config.json", "r") as f:
                         data = json.load(f)
                         data["Token"] = text
-                        f.seek(0)
+                    with open("DB/Config.json", "w") as f:
                         json.dump(data, f, indent=4)
                         print(f'\n"{text}" wurde gespeichert')
                         print("\nWenn es nun funktioniert, werden Sie diese Nachricht nicht mehr sehen")
